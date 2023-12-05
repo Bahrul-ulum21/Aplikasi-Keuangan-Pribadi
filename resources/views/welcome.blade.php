@@ -96,7 +96,7 @@
           <p>Berikut adalah beberapa fitur yang tersedia di aplikasi ini</p>
         </div>
 
-        <div class="row no-gutters">
+        <div class="row no-gutters justify-content-center">
           <div class="col-xl-7 d-flex align-items-stretch order-2 order-lg-1">
             <div class="content d-flex flex-column justify-content-center">
               <div class="row">
@@ -129,7 +129,7 @@
             </div>
           </div>
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/features.svg" class="img-fluid" alt="">
+          <img src="assets/img/features.svg" class="img-fluid" alt="" style="max-height: 100%; max-width: 100%; margin: auto;">
           </div>
         </div>
 
@@ -155,52 +155,52 @@
         <div class="section-title">
 
           <h2>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Pertanyaan seputar E-money</p>
         </div>
 
         <div class="accordion-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-1" class="collapsed">Apa itu E-money?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                E-money adalah aplikasi keuangan pribadi berbasis web yang dirancang untuk mencatat transaksi uang masuk dan keluar, serta menampilkan saldo secara real-time dan saldo bulanan.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">Bagaimana cara mulai menggunakan E-money?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                Anda dapat mendaftar dan login ke aplikasi E-Money melalui situs web resmi. Setelah masuk, Anda dapat mulai mencatat transaksi keuangan Anda.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">Bagaimana cara mencatat transaksi keuangan di E-money?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                Setelah login, klik pada opsi "Transaksi" kemudia pilih "Uang Masuk" atau "Uang Keluar" masukkan detail transaksi seperti jumlah uang dan deskripsi transaksi. Simpan transaksi untuk menyimpan data.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed">Dimana melihat saldo?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                Saldo Anda ditampilkan di dasboard utama setelah login. Anda juga dapat melihat saldo bulanan dan histori transaksi melalui menu "Laporan" di aplikasi.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed">Bisakah mengelompokkan transaksi ke dalam kategori tertentu?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                Ya, E-money memungkinkan Anda membuat kategori transaksi sesuai kebutuhan Anda. Ini membantu Anda melacak pengeluaran dan pemasukan dalam kategori tertentu, seperti makanan, transportasi, atau hiburan.
                 </p>
               </div>
             </li>
