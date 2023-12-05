@@ -36,4 +36,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Relasi dengan model Category
+    public function categories()
+    {
+        return $this->hasMany(Category::class, 'creator_id');
+    }
+
+    // Relasi dengan model Transaction
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class, 'creator_id');
+    }
 }
