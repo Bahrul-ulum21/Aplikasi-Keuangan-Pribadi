@@ -76,7 +76,7 @@
                         Belum punya akun? <a href="{{ route('register') }}">Buat Sekarang!</a>
                     </div>
                     <div class="simple-footer">
-                        © <strong>UANGKU</strong> 2019. Hak Cipta Dilindungi.
+                        © <strong>E-money</strong> 2023. Hak Cipta Dilindungi.
                     </div>
                 </div>
             </div>
