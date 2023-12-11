@@ -72,9 +72,9 @@
 
                         </div>
                     </div>
-                    <div class="mt-5 text-muted text-center">
+                    {{-- <div class="mt-5 text-muted text-center">
                         Belum punya akun? <a href="{{ route('register') }}">Buat Sekarang!</a>
-                    </div>
+                    </div> --}}
                     <div class="simple-footer">
                         © <strong>E-money</strong> 2023. Hak Cipta Dilindungi.
                     </div>
