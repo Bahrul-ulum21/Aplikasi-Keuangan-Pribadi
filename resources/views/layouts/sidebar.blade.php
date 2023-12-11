@@ -32,18 +32,18 @@
         <li class="nav-item nav-profile">
             <a href="#" class="nav-link">
                 <div class="nav-profile-image">
-                    <img src="assets/images/faces/face1.jpg" alt="profile">
+                    <img src="{{ asset('assets/images/faces/face1.jpg')}}" alt="profile">
                     <span class="login-status online"></span>
                 </div>
                 <div class="nav-profile-text d-flex flex-column">
-                    <span class="font-weight-bold mb-2"> {{ Auth::user()->name }}</span>
+                    <span class="font-weight-bold mb-2"> {{ Auth::user()->username }}</span>
                     <span class="text-secondary text-small">{{ Auth::user()->email }}</span>
                 </div>
                 <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/home">
+            <a class="nav-link" href="{{ route('account.dashboard.index') }}">
                 <span class="menu-title">
                     <i class="mdi mdi-home menu-icon"></i>
                     Dashboard
@@ -60,8 +60,8 @@
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="/kategoriuangmasuk">Uang Masuk</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/kategoriuangkeluar">Uang Keluar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('account.categories_debit.index') }}" >Uang Masuk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('account.categories_credit.index') }}">Uang Keluar</a></li>
                 </ul>
             </div>
         </li>
@@ -75,8 +75,8 @@
             </a>
             <div class="collapse" id="ui-basic1">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="/transaksiuangmasuk">Uang Masuk</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/transaksiuangkeluar">Uang Keluar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('account.debit.index') }}">Uang Masuk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('account.credit.index') }}">Uang Keluar</a></li>
                 </ul>
             </div>
         </li>
@@ -92,8 +92,8 @@
             <div class="collapse" id="ui-basic2">
                 <ul class="nav flex-column sub-menu">
                     <!-- Tambahkan item laporan di sini -->
-                    <li class="nav-item"><a class="nav-link" href="/laporan1">Laporan 1</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/laporan2">Laporan 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('account.laporan_debit.index') }}">Uang Masuk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('account.laporan_credit.index') }}">Uang Keluar</a></li>
                 </ul>
             </div>
         </li>

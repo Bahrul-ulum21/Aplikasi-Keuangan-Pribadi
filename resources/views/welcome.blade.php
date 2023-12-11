@@ -55,7 +55,7 @@
           <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="/login">Login</a></li>
-          <li><a class="getstarted scrollto" href="/register">Register</a></li>
+          {{-- <li><a class="getstarted scrollto" href="/register">Register</a></li> --}}
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -73,12 +73,12 @@
           <div>
             <h1>Aplikasi Keuangan Terbaik</h1>
             <h2>Dapat Membantu Anda Dalam Mencatat Seluruh Keuangan Pribadi Atau Perusahaan Tertentu</h2>
-            <a href="#" class="download-btn"><i class="bx bxl-play-store"></i> Google Play</a>
-            <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a>
+            {{-- <a href="/login" class="btn btn-secondary"> Sign In</a> --}}
+            <a href="#" class="download-btn"><i class="bx bxl-apple"></i>Sign In</a>
           </div>
         </div>
         <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+          <img src="{{asset("front/assets/img/hero-img.png")}}" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -129,7 +129,7 @@
             </div>
           </div>
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-          <img src="assets/img/features.svg" class="img-fluid" alt="" style="max-height: 100%; max-width: 100%; margin: auto;">
+          <img src="{{asset("front/assets/img/features.svg")}}" class="img-fluid" alt="" style="max-height: 100%; max-width: 100%; margin: auto;">
           </div>
         </div>
 
