@@ -4957,7 +4957,7 @@ textarea.form-control-lg {
   .dropdown-menu-dark .dropdown-item {
     color: #dee2e6; }
     .dropdown-menu-dark .dropdown-item:hover, .dropdown-menu-dark .dropdown-item:focus {
-      color: #fff;
+      color: #ffffff28;
       background-color: rgba(255, 255, 255, 0.15); }
     .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
       color: #fff;
@@ -13275,8 +13275,8 @@ code {
     .dropdown .dropdown-menu .dropdown-item:active {
       background: initial; }
     .dropdown .dropdown-menu .dropdown-item:hover {
-      background-color: #f8f9fa;
-      color: #ffffff; }
+      /* background-color: #f8f9fa; */
+      color: black; }
 
 /* Forms */
 .form-group {
