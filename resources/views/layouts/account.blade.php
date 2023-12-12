@@ -93,6 +93,8 @@
     <!-- Custom js for this page -->
     <script src="{{asset('assets/js/dashboard.js')}}"></script>
     <script src="{{asset('assets/js/todolist.js')}}"></script>
+    <script src="{{asset('assets/js/misc.js')}}"></script>
+    <script src="{{asset('assets/js/off-canvas.js')}}"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/js/bootstrap.bundle.min.js"></script> --}}
     <!-- End custom js for this page -->
