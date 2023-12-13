@@ -55,7 +55,7 @@
           <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="/login">Login</a></li>
-          {{-- <li><a class="getstarted scrollto" href="/register">Register</a></li> --}}
+          <li><a class="getstarted scrollto" href="/register">Register</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -74,7 +74,7 @@
             <h1>Aplikasi Keuangan Terbaik</h1>
             <h2>Dapat Membantu Anda Dalam Mencatat Seluruh Keuangan Pribadi Atau Perusahaan Tertentu</h2>
             {{-- <a href="/login" class="btn btn-secondary"> Sign In</a> --}}
-            <a href="#" class="download-btn"><i class="bx bxl-apple"></i>Sign In</a>
+            {{-- <a href="#" class="download-btn"><i class="bx bxl-apple"></i>Sign In</a> --}}
           </div>
         </div>
         <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
@@ -349,14 +349,14 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Appland</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Kelompok 5</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        2023
       </div>
     </div>
   </footer><!-- End Footer -->

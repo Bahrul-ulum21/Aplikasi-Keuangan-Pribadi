@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Daftar Akun &mdash; UANGKU</title>
-    <link rel="shortcut icon" href="{{ asset('assets/img/logo.png') }}">
+    <title>Daftar Akun &mdash; E-Money</title>
+    <link rel="shortcut icon" href="{{ asset('costome/assets/img/logo.png') }}">
     <!-- General CSS Files -->
-    <link rel="stylesheet" href="{{ asset('assets/modules/bootstrap/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/modules/fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('costome/assets/modules/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('costome/assets/modules/fontawesome/css/all.min.css') }}">
 
     <!-- CSS Libraries -->
-    <link rel="stylesheet" href="{{ asset('assets/modules/bootstrap-social/bootstrap-social.css') }}">
+    <link rel="stylesheet" href="{{ asset('costome/assets/modules/bootstrap-social/bootstrap-social.css') }}">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
+    <link rel="stylesheet" href="{{ asset('costome/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('costome/assets/css/components.css') }}">
 </head>
 
 <body style="background: #f3f3f3">
@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
                     <div class="login-brand">
-                        <img src="{{ asset('assets/img/jewelry.svg') }}" alt="logo" width="100" class="shadow-light rounded-circle">
+                        <img src="{{ asset('costome/assets/img/jewelry.svg') }}" alt="logo" width="100" class="shadow-light rounded-circle">
                     </div>
 
                     <div class="card card-primary">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                     <div class="simple-footer">
-                        © <strong>UANGKU</strong> 2019. Hak Cipta Dilindungi.
+                        © <strong>E-Money</strong> 2023. Hak Cipta Dilindungi.
                     </div>
                 </div>
             </div>
@@ -113,20 +113,34 @@
 </div>
 
 <!-- General JS Scripts -->
-<script src="{{ asset('assets/modules/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/modules/popper.js') }}"></script>
-<script src="{{ asset('assets/modules/tooltip.js') }}"></script>
-<script src="{{ asset('assets/modules/bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/modules/nicescroll/jquery.nicescroll.min.js') }}"></script>
-<script src="{{ asset('assets/modules/moment.min.js') }}"></script>
-<script src="{{ asset('assets/js/stisla.js') }}"></script>
+<script src="{{ asset('costome/assets/modules/jquery.min.js') }}"></script>
+<script src="{{ asset('costome/assets/modules/popper.js') }}"></script>
+<script src="{{ asset('costome/assets/modules/tooltip.js') }}"></script>
+<script src="{{ asset('costome/assets/modules/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('costome/assets/modules/nicescroll/jquery.nicescroll.min.js') }}"></script>
+<script src="{{ asset('costome/assets/modules/moment.min.js') }}"></script>
+<script src="{{ asset('costome/assets/js/stisla.js') }}"></script>
+<script src="{{ asset('costome/assets/js/sweetalert.min.js') }}"></script>
 
 <!-- JS Libraies -->
+<script>
+    // Display Sweet Alert if success message exists
+    $(document).ready(function(){
+        @if(session('success'))
+            Swal.fire({
+                title: 'Sukses!',
+                text: '{{ session('success') }}',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        @endif
+    });
+</script>
 
 <!-- Page Specific JS File -->
 
 <!-- Template JS File -->
-<script src="{{ asset('assets/js/scripts.js') }}"></script>
-<script src="{{ asset('assets/js/custom.js') }}"></script>
+<script src="{{ asset('costome/assets/js/scripts.js') }}"></script>
+<script src="{{ asset('costome/assets/js/custom.js') }}"></script>
 </body>
 </html>
