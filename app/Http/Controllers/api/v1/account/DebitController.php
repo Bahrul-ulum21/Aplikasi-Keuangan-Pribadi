@@ -27,14 +27,10 @@ class DebitController extends Controller
         $debit = DB::table('debit')
             ->select('debit.id', 'debit.category_id', 'debit.user_id', 'debit.nominal', 'debit.debit_date', 'debit.description', 'categories_debit.id as id_category', 'categories_debit.name as category_name')
             ->join('categories_debit', 'debit.category_id', '=', 'categories_debit.id', 'LEFT')
-            // ->where('debit.user_id', Auth::user()->id)
+            ->where('debit.user_id', Auth::user()->id)
             ->orderBy('debit.created_at', 'DESC')
             ->get();
 
-        return response()->json([
-            'success' => true,
-            'data'    => $debit
-        ],200);
 
     }
 

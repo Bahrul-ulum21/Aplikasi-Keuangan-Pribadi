@@ -31,7 +31,7 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Basic Table</h4>
-                <a href="{{ route('export_credit')}}">EXPORT EXEL</a>
+                <a href="{{ route('export_credit')}}">EXPORT EXCEL</a>
                 </p>
                 <table class="table">
                   <thead>
