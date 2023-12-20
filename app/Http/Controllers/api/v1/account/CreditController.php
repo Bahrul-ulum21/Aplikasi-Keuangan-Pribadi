@@ -27,7 +27,7 @@ class CreditController extends Controller
         $credit = DB::table('credit')
             ->select('credit.id', 'credit.category_id', 'credit.user_id', 'credit.nominal', 'credit.credit_date', 'credit.description', 'categories_credit.id as id_category', 'categories_credit.name as category_name')
             ->join('categories_credit', 'credit.category_id', '=', 'categories_credit.id', 'LEFT')
-            ->where('credit.user_id', Auth::user()->id)
+            // ->where('credit.user_id', Auth::user()->id)
             ->orderBy('credit.created_at', 'DESC')
             ->get();
 
@@ -37,7 +37,7 @@ class CreditController extends Controller
         ],200);
 
     }
-
+    
     /**
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse

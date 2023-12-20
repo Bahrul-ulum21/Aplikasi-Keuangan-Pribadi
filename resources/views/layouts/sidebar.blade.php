@@ -50,6 +50,7 @@
                 </span>
             </a>
         </li>
+        @if (auth()->user()->role == 'user')
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">
@@ -64,7 +65,8 @@
                     <li class="nav-item"><a class="nav-link" href="{{ route('account.categories_credit.index') }}">Uang Keluar</a></li>
                 </ul>
             </div>
-        </li>
+        </li>       
+        @endif
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic1">
                 <span class="menu-title">

@@ -6,6 +6,7 @@
 
 @section('content')
     <div class="content-wrapper">
+      @if (auth()->user()->role == 'user')
         <form action="{{ route('account.credit.search') }}" method="GET">
           <div class="form-group">
               <div class="input-group">
@@ -21,6 +22,8 @@
               </div>
           </div>
       </form>
+      @endif
+
         <div class="page-header">
         </div>
         <div class="row">
@@ -28,6 +31,7 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Basic Table</h4>
+                <a href="{{ route('export_credit')}}">EXPORT EXEL</a>
                 </p>
                 <table class="table">
                   <thead>
@@ -50,6 +54,7 @@
                       <td>{{ $hasil->nominal}}</td>
                       <td>{{ $hasil->description }}</td>
                       <td>{{ $hasil->credit_date }}</td>
+                   @if (auth()->user()->role == 'user')
                       <td>
                         <button onClick="Delete(this.id)" class="btn btn-inverse-danger btn-sm" id="{{ $hasil->id }}">
                           <i class="mdi mdi-close-box">Delete</i>
@@ -58,6 +63,7 @@
                           <i class="mdi mdi-brush">Edit</i>
                         </a>
                       </td>
+                 @endif
                     </tr>
                      @endforeach
                   </tbody>
