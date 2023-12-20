@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Masuk Akun &mdash; UANGKU</title>
+    <title>Masuk Akun &mdash; E-money</title>
     <link rel="shortcut icon" href="{{ asset('costome/assets/img/logo.png') }}">
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('costome/assets/modules/bootstrap/css/bootstrap.min.css') }}">

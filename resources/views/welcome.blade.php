@@ -42,11 +42,18 @@
   <header id="header" class="fixed-top  header-transparent ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <div class="logo">
-        <h1><a href="index.html">E-money</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+    <div class="logo" style="display: flex; align-items: center;">
+  <!-- Uncomment below if you prefer to use an image logo -->
+  <a href="index.html">
+    <img src="costome/assets/img/jewelry.svg" alt="" class="img-fluid" style="max-width: 100px; height: auto;">
+  </a>
+  <h1 style="margin-left: 10px;">
+    <a href="index.html" style="text-decoration: none; font-size: 24px; font-weight: bold;">E-money</a>
+  </h1>
+</div>
+
+
+
 
       <nav id="navbar" class="navbar">
         <ul>
