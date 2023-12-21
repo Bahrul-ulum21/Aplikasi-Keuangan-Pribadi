@@ -23,7 +23,6 @@
                 <p class="card-description"> Basic form elements </p>
                 <form action="{{ route('account.debit.store') }}" method="POST">
                     @csrf
-
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">

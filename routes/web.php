@@ -18,7 +18,8 @@ Route::get('/', function () {
 
 // Route::get('export-data', [ExportController::class, 'index']);
 
-Route::get('export-data', 'ExportController@index')->name('export_credit');
+Route::get('export-credit', 'ExportController@export_credit')->name('export_credit');
+Route::get('export-debit', 'ExportController@export_debit')->name('export_debit');
 Route::get('/login', 'Auth\LoginController@showLoginForm');
 
 Auth::routes();

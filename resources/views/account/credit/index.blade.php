@@ -6,13 +6,14 @@
 
 @section('content')
     <div class="content-wrapper">
-      @if (auth()->user()->role == 'user')
-        <form action="{{ route('account.credit.search') }}" method="GET">
-          <div class="form-group">
-              <div class="input-group">
-                  <div class="input-group-prepend">
+      <form action="{{ route('account.credit.search') }}" method="GET">
+        <div class="form-group">
+          <div class="input-group">
+            @if (auth()->user()->role == 'user')
+            <div class="input-group-prepend">
                       <a href="{{ route('account.credit.create') }}" class="btn btn-primary" style="padding-top: 10px;"><i class="fa fa-plus-circle"></i> TAMBAH</a>
                   </div>
+                  @endif
                   <input type="text" class="form-control" name="q"
                          placeholder="cari berdasarkan nama kategori">
                   <div class="input-group-append">
@@ -21,9 +22,8 @@
                   </div>
               </div>
           </div>
-      </form>
-      @endif
-
+        </form>
+        
         <div class="page-header">
         </div>
         <div class="row">
@@ -41,6 +41,10 @@
                       <th>Nominal</th>
                       <th>Keterangan</th>
                       <th>Tanggal</th>
+                   @if (auth()->user()->role == 'user')
+                      <th>Action</th>
+                 @endif
+
                     </tr>
                   </thead>
                   <tbody>

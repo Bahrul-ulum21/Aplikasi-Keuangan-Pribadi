@@ -9,9 +9,11 @@
         <form action="{{ route('account.debit.search') }}" method="GET">
           <div class="form-group">
               <div class="input-group">
+            @if (auth()->user()->role == 'user')
                   <div class="input-group-prepend">
                       <a href="{{ route('account.debit.create') }}" class="btn btn-primary" style="padding-top: 10px;"><i class="fa fa-plus-circle"></i> TAMBAH</a>
                   </div>
+                  @endif
                   <input type="text" class="form-control" name="q"
                          placeholder="cari berdasarkan nama kategori">
                   <div class="input-group-append">
@@ -28,6 +30,7 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Basic Table</h4>
+                <a href="{{route('export_debit')}}">EXPORT EXCEL</a>
                 </p>
                 <table class="table">
                   <thead>
@@ -37,6 +40,9 @@
                       <th>Nominal</th>
                       <th>Keterangan</th>
                       <th>Tanggal</th>
+                     @if (auth()->user()->role == 'user')   
+                      <th>Action</th>
+                      @endif
                     </tr>
                   </thead>
                   <tbody>
@@ -50,6 +56,7 @@
                       <td>{{ $hasil->nominal}}</td>
                       <td>{{ $hasil->description }}</td>
                       <td>{{ $hasil->debit_date }}</td>
+                      @if (auth()->user()->role == 'user')
                       <td>
                         <button onClick="Delete(this.id)" class="btn btn-inverse-danger btn-sm" id="{{ $hasil->id }}">
                           <i class="mdi mdi-close-box">Delete</i>
@@ -58,6 +65,7 @@
                           <i class="mdi mdi-brush">Edit</i>
                         </a>
                       </td>
+                      @endif
                     </tr>
                      @endforeach
                   </tbody>

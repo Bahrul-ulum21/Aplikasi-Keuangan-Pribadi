@@ -28,7 +28,7 @@ class CreditController extends Controller
         $credit = DB::table('credit')
             ->select('credit.id', 'credit.category_id', 'credit.user_id', 'credit.nominal', 'credit.credit_date', 'credit.description', 'categories_credit.id as id_category', 'categories_credit.name')
             ->join('categories_credit', 'credit.category_id', '=', 'categories_credit.id', 'LEFT')
-            ->where('credit.user_id', Auth::user()->id)
+            // ->where('credit.user_id', Auth::user()->id)
             ->orderBy('credit.created_at', 'DESC')
             ->paginate(10);
         return view('account.credit.index', compact('credit'));
@@ -45,6 +45,7 @@ class CreditController extends Controller
             ->select('credit.id', 'credit.category_id', 'credit.user_id', 'credit.nominal', 'credit.credit_date', 'credit.description', 'categories_credit.id as id_category', 'categories_credit.name')
             ->join('categories_credit', 'credit.category_id', '=', 'categories_credit.id', 'LEFT')
             ->where('credit.user_id', Auth::user()->id)
+            ->where('credit.user_id', Auth::admin()->id)
             ->where('credit.description', 'LIKE', '%' .$search. '%')
             ->orderBy('credit.created_at', 'DESC')
             ->paginate(10);
