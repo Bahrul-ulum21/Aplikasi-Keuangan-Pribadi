@@ -29,38 +29,38 @@ class DashboardController extends Controller
             ->selectRaw('sum(nominal) as nominal')
             ->whereYear('debit_date', Carbon::now()->year)
             ->whereMonth('debit_date', Carbon::now()->month)
-            ->where('user_id', Auth::user()->id)
+            // ->where('user_id', Auth::user()->id)
             ->first();
 
         $uang_keluar_bulan_ini = DB::table('credit')
             ->selectRaw('sum(nominal) as nominal')
             ->whereYear('credit_date', Carbon::now()->year)
             ->whereMonth('credit_date', Carbon::now()->month)
-            ->where('user_id', Auth::user()->id)
+            // ->where('user_id', Auth::user()->id)
             ->first();
 
         $uang_masuk_bulan_lalu  = DB::table('debit')
             ->selectRaw('sum(nominal) as nominal')
             ->whereYear('debit_date', Carbon::now()->year)
             ->whereMonth('debit_date', Carbon::now()->subMonths())
-            ->where('user_id', Auth::user()->id)
+            // ->where('user_id', Auth::user()->id)
             ->first();
 
         $uang_keluar_bulan_lalu = DB::table('credit')
             ->selectRaw('sum(nominal) as nominal')
             ->whereYear('credit_date', Carbon::now()->year)
             ->whereMonth('credit_date', Carbon::now()->subMonths())
-            ->where('user_id', Auth::user()->id)
+            // ->where('user_id', Auth::user()->id)
             ->first();
 
         $uang_masuk_selama_ini  = DB::table('debit')
             ->selectRaw('sum(nominal) as nominal')
-            ->where('user_id', Auth::user()->id)
+            // ->where('user_id', Auth::user()->id)
             ->first();
 
         $uang_keluar_selama_ini = DB::table('credit')
             ->selectRaw('sum(nominal) as nominal')
-            ->where('user_id', Auth::user()->id)
+            // ->where('user_id', Auth::user()->id)
             ->first();
 
 
@@ -72,6 +72,7 @@ class DashboardController extends Controller
 
         //saldo selama ini
         $saldo_selama_ini = $uang_masuk_selama_ini->nominal - $uang_keluar_selama_ini->nominal;
+
 
 
         /**
