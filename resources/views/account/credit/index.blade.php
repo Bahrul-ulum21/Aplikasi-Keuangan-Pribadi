@@ -31,8 +31,12 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Basic Table</h4>
-                <a href="{{ route('export_credit')}}">EXPORT EXCEL</a>
-                </p>
+                <!-- <a href="{{ route('export_credit')}}">EXPORT EXCEL</a>
+                </p> -->
+                <!-- button EXPORT EXCEL -->
+                <a href="{{ route('export_credit')}}" class="btn btn-success mb-3">
+                  <i class="fa fa-download"></i>Export Excel
+                </a>
                 <table class="table">
                   <thead>
                     <tr>
