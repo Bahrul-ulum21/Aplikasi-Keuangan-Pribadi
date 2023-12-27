@@ -99,5 +99,15 @@
                 </ul>
             </div>
         </li>
+        @if (auth()->user()->role == 'admmin')
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url('/management-user') }}">
+                <span class="menu-title">
+                    <i class="mdi mdi-account fa-5x"></i>
+                    MANAGEMENT USER
+                </span>
+            </a>
+        </li>
+        @endif
     </ul>
 </nav>

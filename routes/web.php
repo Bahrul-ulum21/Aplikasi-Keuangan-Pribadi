@@ -22,6 +22,11 @@ Route::get('export-credit', 'ExportController@export_credit')->name('export_cred
 Route::get('export-debit', 'ExportController@export_debit')->name('export_debit');
 Route::get('/login', 'Auth\LoginController@showLoginForm');
 
+Route::get('/management-user', function () {
+    return view('management');
+});
+
+
 Auth::routes();
 
 /**
